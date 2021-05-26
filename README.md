@@ -15,6 +15,9 @@
 3. open the repo in vs by **code .**.
 4. we used A-C-P to make it onilne and save editing of repo.
 
+i was a navigater on https://github.com/khairshkokany/About-me/pull/1/commits/d03bb921514790ad7d51664d1bcf9a53ad449d09
+
+i was a driver on https://github.com/macRos-Alzoubi/About_Me/pull/1/commits/a89ce79d01ed422fef20a6ec702515a11ff628b2
 
 
 Copyright (c) 2021 khair shkokany
