@@ -6,8 +6,9 @@ alert('hello ' + userName + ' welcome to our page');
 alert('lets start to know how is ur background about anime');
 
 let score = 0;
+let animes = ['attack on titan', 'one piece', 'tokyo ghoul', 'demon slayer', 'jujutsu no kaysi'];
 
-const qustion1 = function () {
+const question1 = function () {
   let anime = prompt('is ur best anime is attack on titan..!');
   anime = anime.toUpperCase();
   if (anime === 'YES' || anime === 'Y') {
@@ -24,7 +25,7 @@ const qustion1 = function () {
   }
 };
 
-const qustion2 = function () {
+const question2 = function () {
   let charc = prompt('is ur best character is IRIN..!');
   charc = charc.toLowerCase();
   if (charc === 'yes' || charc === 'y') {
@@ -41,7 +42,7 @@ const qustion2 = function () {
   }
 };
 
-const qustion3 = function () {
+const question3 = function () {
   let charc2 = prompt('ok do you like mekasa ..! ');
   charc2 = charc2.toUpperCase();
 
@@ -66,7 +67,7 @@ const qustion3 = function () {
 };
 
 
-const qustion4 = function () {
+const question4 = function () {
   let rate = prompt('the rate of attack on titan must be lower than 9 ..! ');
   rate = rate.toUpperCase();
 
@@ -91,7 +92,7 @@ const qustion4 = function () {
   }
 };
 
-const qustion5 = function () {
+const question5 = function () {
   let love = prompt('do you love my website and my qustions  ..! ');
   love = love.toUpperCase();
 
@@ -116,7 +117,7 @@ const qustion5 = function () {
 };
 
 
-const qustion6 = function () {
+const question6 = function () {
   for (let i = 0; i < 4; i++) {
     let number = Number(prompt('choice a correct number of my anime  i loved from 1-10 '));
     number = Number(number);
@@ -145,40 +146,43 @@ const qustion6 = function () {
   }
 };
 
-qustion1();
-qustion2();
-qustion3();
-qustion4();
-qustion5();
-qustion6();
-
-
-
-
-
-
-let correctAnswer = prompt('choice a correct anime i loved :) .. ').toLowerCase();
-console.log(correctAnswer);
-let animes = ['attack on titan', 'one piece', 'tokyo ghoul', 'demon slayer', 'jujutsu no kaysi'];
-let flag = false;
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < animes.length; j++) {
-    if (animes[j] === correctAnswer) {
-      alert('nice ..! , correct answer its nice anime');
-      flag = true;
-      score++;
+const question7 = function () {
+  let correctAnswer = prompt('choice a correct anime i loved :) .. ').toLowerCase();
+  console.log(correctAnswer);
+  let flag = false;
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < animes.length; j++) {
+      if (animes[j] === correctAnswer) {
+        alert('nice ..! , correct answer its nice anime');
+        flag = true;
+        score++;
+        break;
+      }
+    }
+    if (flag) {
       break;
     }
-  }
-  if (flag) {
-    break;
-  }
-  else {
-    correctAnswer = prompt('this is not my anime , retype another one ');
-  }
+    else {
+      correctAnswer = prompt('this is not my anime , retype another one ');
+    }
 
 
-}
+  }
+};
+
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
+
+
+
+
+
+
 let sst = '';
 for (let i = 0; i < animes.length; i++) {
   sst = sst + ',' + animes[i];
