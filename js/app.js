@@ -116,42 +116,46 @@ const qustion5 = function () {
 };
 
 
+const qustion6 = function () {
+  for (let i = 0; i < 4; i++) {
+    let number = Number(prompt('choice a correct number of my anime  i loved from 1-10 '));
+    number = Number(number);
+    console.log('type of number', typeof (number));
+    console.log(number, i);
+    if (number === 10) {
+      alert('nice ..! , correct answear its demon slayer');
+      score++;
+      break;
+    } else if (number > 10) {
+
+      alert('too high , guess again');
+    } else if (number < 10) {
+
+      alert('too low , guess again');
+    } else {
+
+      alert('why you didn\'t answear ..?');
+    }
+
+    if (i === 3) {
+      alert('ops ... you take all attempts :(, the answear is 10 ');
+      // break;
+    }
+
+  }
+};
+
 qustion1();
 qustion2();
 qustion3();
 qustion4();
 qustion5();
+qustion6();
 
 
 
 
 
-for (let i = 0; i < 4; i++) {
-  let number = Number(prompt('choice a correct number of my anime  i loved from 1-10 '));
-  number = Number(number);
-  console.log('type of number', typeof (number));
-  console.log(number, i);
-  if (number === 10) {
-    alert('nice ..! , correct answear its demon slayer');
-    score++;
-    break;
-  } else if (number > 10) {
-
-    alert('too high , guess again');
-  } else if (number < 10) {
-
-    alert('too low , guess again');
-  } else {
-
-    alert('why you didn\'t answear ..?');
-  }
-
-  if (i === 3) {
-    alert('ops ... you take all attempts :(, the answear is 10 ');
-    // break;
-  }
-
-}
 
 let correctAnswer = prompt('choice a correct anime i loved :) .. ').toLowerCase();
 console.log(correctAnswer);
