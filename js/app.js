@@ -41,32 +41,38 @@ const qustion2 = function () {
   }
 };
 
+const qustion3 = function () {
+  let charc2 = prompt('ok do you like mekasa ..! ');
+  charc2 = charc2.toUpperCase();
+
+  switch (charc2) {
+    case 'YES':
+    case 'Y':
+      console.log('yes you like him ..!');
+      alert('ur answear is yes , nice ..');
+      score++;
+      break;
+    case 'NO':
+    case 'N':
+      console.log('no it is not');
+      alert('what..!!!!! dude mekasa is the the best ..!');
+      break;
+
+    default:
+      console.log('so sad :(');
+      alert('Umm ok i will check u in the next qustion :..( ');
+      break;
+  }
+};
+
+
+
 
 qustion1();
 qustion2();
+qustion3();
 
 
-let charc2 = prompt('ok do you like mekasa ..! ');
-charc2 = charc2.toUpperCase();
-
-switch (charc2) {
-  case 'YES':
-  case 'Y':
-    console.log('yes you like him ..!');
-    alert('ur answear is yes , nice ..');
-    score++;
-    break;
-  case 'NO':
-  case 'N':
-    console.log('no it is not');
-    alert('what..!!!!! dude mekasa is the the best ..!');
-    break;
-
-  default:
-    console.log('so sad :(');
-    alert('Umm ok i will check u in the next qustion :..( ');
-    break;
-}
 
 
 
