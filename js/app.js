@@ -117,7 +117,29 @@ const qustion5 = function () {
   }
 };
 
+const qustion6 = function () {
+  let love = prompt('do you love my website and my qustions  ..! ');
+  love = love.toUpperCase();
 
+  switch (love) {
+    case 'YES':
+    case 'Y':
+      console.log('yes he/she loved it ..');
+      alert('ur answear is yes , nice you are my friend from now .. ');
+      score++;
+      break;
+    case 'NO':
+    case 'N':
+      console.log('no he/she did not like ');
+      alert('ok i will block you :) , see you :)');
+      break;
+
+    default:
+      console.log('no response :) ');
+      alert('you are fine ?? ');
+      break;
+  }
+};
 
 
 qustion1();
@@ -125,30 +147,8 @@ qustion2();
 qustion3();
 qustion4();
 qustion5();
+qustion6();
 
-
-
-let love = prompt('do you love my website and my qustions  ..! ');
-love = love.toUpperCase();
-
-switch (love) {
-  case 'YES':
-  case 'Y':
-    console.log('yes he/she loved it ..');
-    alert('ur answear is yes , nice you are my friend from now .. ');
-    score++;
-    break;
-  case 'NO':
-  case 'N':
-    console.log('no he/she did not like ');
-    alert('ok i will block you :) , see you :)');
-    break;
-
-  default:
-    console.log('no response :) ');
-    alert('you are fine ?? ');
-    break;
-}
 
 
 
