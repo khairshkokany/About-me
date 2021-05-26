@@ -66,38 +66,41 @@ const qustion3 = function () {
 };
 
 
+const qustion4 = function () {
+  let rate = prompt('the rate of attack on titan must be lower than 9 ..! ');
+  rate = rate.toUpperCase();
+
+  switch (rate) {
+    case 'YES':
+    case 'Y':
+      console.log('yes below 9');
+      alert('ur answear is yes , i think ur not anime lover :) ');
+
+      break;
+    case 'NO':
+    case 'N':
+      console.log('no above 9');
+      alert('what..!!!!! dude please go away before i kill u !');
+      score++;
+      break;
+
+    default:
+      console.log('no response :) ');
+      alert('please go to watch turkish series :)');
+      break;
+  }
+};
+
+
 
 
 qustion1();
 qustion2();
 qustion3();
+qustion4();
 
 
 
-
-
-let rate = prompt('the rate of attack on titan must be lower than 9 ..! ');
-rate = rate.toUpperCase();
-
-switch (rate) {
-  case 'YES':
-  case 'Y':
-    console.log('yes below 9');
-    alert('ur answear is yes , i think ur not anime lover :) ');
-
-    break;
-  case 'NO':
-  case 'N':
-    console.log('no above 9');
-    alert('what..!!!!! dude please go away before i kill u !');
-    score++;
-    break;
-
-  default:
-    console.log('no response :) ');
-    alert('please go to watch turkish series :)');
-    break;
-}
 
 let love = prompt('do you love my website and my qustions  ..! ');
 love = love.toUpperCase();
