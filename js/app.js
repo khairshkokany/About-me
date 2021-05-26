@@ -47,22 +47,22 @@ const question3 = function () {
   charc2 = charc2.toUpperCase();
 
   switch (charc2) {
-    case 'YES':
-    case 'Y':
-      console.log('yes you like him ..!');
-      alert('ur answear is yes , nice ..');
-      score++;
-      break;
-    case 'NO':
-    case 'N':
-      console.log('no it is not');
-      alert('what..!!!!! dude mekasa is the the best ..!');
-      break;
+  case 'YES':
+  case 'Y':
+    console.log('yes you like him ..!');
+    alert('ur answear is yes , nice ..');
+    score++;
+    break;
+  case 'NO':
+  case 'N':
+    console.log('no it is not');
+    alert('what..!!!!! dude mekasa is the the best ..!');
+    break;
 
-    default:
-      console.log('so sad :(');
-      alert('Umm ok i will check u in the next qustion :..( ');
-      break;
+  default:
+    console.log('so sad :(');
+    alert('Umm ok i will check u in the next qustion :..( ');
+    break;
   }
 };
 
@@ -72,23 +72,24 @@ const question4 = function () {
   rate = rate.toUpperCase();
 
   switch (rate) {
-    case 'YES':
-    case 'Y':
-      console.log('yes below 9');
-      alert('ur answear is yes , i think ur not anime lover :) ');
+  case 'YES':
+  case 'Y':
+    console.log('yes below 9');
 
-      break;
-    case 'NO':
-    case 'N':
-      console.log('no above 9');
-      alert('what..!!!!! dude please go away before i kill u !');
-      score++;
-      break;
+    alert('what..!!!!! dude please go away before i kill u !');
 
-    default:
-      console.log('no response :) ');
-      alert('please go to watch turkish series :)');
-      break;
+    break;
+  case 'NO':
+  case 'N':
+    console.log('no above 9');
+    alert('ur answear is no , i think ur anime lover :) ');
+    score++;
+    break;
+
+  default:
+    console.log('no response :) ');
+    alert('please go to watch turkish series :)');
+    break;
   }
 };
 
@@ -97,22 +98,22 @@ const question5 = function () {
   love = love.toUpperCase();
 
   switch (love) {
-    case 'YES':
-    case 'Y':
-      console.log('yes he/she loved it ..');
-      alert('ur answear is yes , nice you are my friend from now .. ');
-      score++;
-      break;
-    case 'NO':
-    case 'N':
-      console.log('no he/she did not like ');
-      alert('ok i will block you :) , see you :)');
-      break;
+  case 'YES':
+  case 'Y':
+    console.log('yes he/she loved it ..');
+    alert('ur answear is yes , nice you are my friend from now .. ');
+    score++;
+    break;
+  case 'NO':
+  case 'N':
+    console.log('no he/she did not like ');
+    alert('ok i will block you :) , see you :)');
+    break;
 
-    default:
-      console.log('no response :) ');
-      alert('you are fine ?? ');
-      break;
+  default:
+    console.log('no response :) ');
+    alert('you are fine ?? ');
+    break;
   }
 };
 
@@ -185,16 +186,16 @@ question7();
 
 let sst = '';
 for (let i = 0; i < animes.length; i++) {
-  sst = sst + ',' + animes[i];
+  sst = sst + animes[i];
 
 
 }
 
-alert('this is my favorite animes' + sst);
+alert('this is my favorite animes :- ' + sst);
 
 
 
 
-alert(`thanks for playing this game  ${userName} your score is ${score}`);
+alert(`thanks for playing this game  ${userName} your score is ${score} /7`);
 
 
