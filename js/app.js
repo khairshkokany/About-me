@@ -24,7 +24,7 @@ const qustion1 = function () {
   }
 };
 
-const qustion1 = function () {
+const qustion2 = function () {
   let charc = prompt('is ur best character is IRIN..!');
   charc = charc.toLowerCase();
   if (charc === 'yes' || charc === 'y') {
@@ -42,24 +42,9 @@ const qustion1 = function () {
 };
 
 
-
-
 qustion1();
+qustion2();
 
-let charc = prompt('is ur best character is IRIN..!');
-charc = charc.toLowerCase();
-if (charc === 'yes' || charc === 'y') {
-  console.log('yes you like him ..!');
-  alert('ur answear is yes , nice ..');
-  score++;
-} else if (charc === 'no' || charc === 'n') {
-  console.log('no it is not');
-  alert('ok let me ask u another character.. ');
-} else {
-  console.log('so sad :(');
-  alert('so sad for no answear :..( ');
-
-}
 
 let charc2 = prompt('ok do you like mekasa ..! ');
 charc2 = charc2.toUpperCase();
